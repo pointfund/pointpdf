@@ -1,0 +1,2 @@
+class VariableList < ApplicationRecord
+end

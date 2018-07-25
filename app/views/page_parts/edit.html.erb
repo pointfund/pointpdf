@@ -1,0 +1,10 @@
+	<div class="panel panel-default"> 
+		<div class="panel-heading"> 
+			<h1>Editing Page Section</h1>
+		</div>
+
+		<%= render 'form', page_part: @page_part %>
+
+		<div class="btn btn-default"><%= link_to 'Show', @page_part %> </div>
+		<div class="btn btn-default"><%= link_to 'All Sections', page_parts_path(contract_id: @page_part.contract_id ) %></div>
+	</div>

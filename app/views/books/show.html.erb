@@ -1,0 +1,33 @@
+<div class="panel panel-default"> 
+    <div class="panel-heading"> 
+      <p id="notice"><%= notice %></p>  
+       <strong>Book ID</strong>
+          <%= @book.id %>  
+        <strong>Book Name:</strong>
+        <%= @book.name %>  
+        <strong>Contract Pages </strong>
+        <%= @book.page_count %>
+      <br />
+    </div>
+
+      <div class="panel-body">
+        <div>
+      		<div class="btn btn-default"><%= link_to 'Edit Book', edit_book_path(@book) %></div> 
+      		<div class="btn btn-success"><%= link_to 'View All Books', books_path %> </div>
+      		<div class="btn btn-default"><%= link_to "New Contract in Book #{@book.id}", new_contract_path(:book_id => @book.id) %></div>
+      	</div>
+      </div>
+      <%=  %>
+      <%=  render "sort/mycontracts" 
+      %>
+
+      <%= # render "sort/parts" 
+      %>
+      <%= # render "sort/layouts" 
+      %>
+ 
+    <div class="btn btn-success"><%= link_to "New Contract in Book #{@book.id}", new_contract_path(:book_id => @book.id) %></div>
+      
+
+ 
+</div>
