@@ -46,16 +46,16 @@ group :development, :test do
   gem 'puma', '~> 3.11'
 end
 
+
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
-  	gem 'web-console', '>= 3.3.0'
-  # Use sqlite3 as the database for Active Record
-	gem 'sqlite3'
-  
+  gem 'web-console', '>= 3.3.0'
+  gem 'sqlite3'
+  gem 'puma', '~> 3.11'
 end
+
 group :production do
-	gem 'pg' 
-	gem "passenger"
+	gem 'pg'
 end
 group :test do
   # Adds support for Capybara system testing and selenium driver
