@@ -16,6 +16,8 @@ Rails.application.routes.draw do
 
 
   root "guide#index"
+
+  
   resources :page_layouts
   resources :layouts
   resources :page_parts
